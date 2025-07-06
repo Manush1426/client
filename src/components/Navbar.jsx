@@ -1,46 +1,22 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
-  const location = useLocation();
-
-  const navLinks = [
-    { path: "/dashboard", label: "Dashboard" },
-    { path: "/features", label: "Features" },
-    { path: "/login", label: "Login" },
-    { path: "/signup", label: "Signup" },
-  ];
-
   return (
-    <nav className="bg-white text-gray-900 px-10 shadow-lg flex justify-between items-center border-b border-gray-200 fixed top-0 left-0 w-full z-50">
-      {/* Logo / Brand */}
-      <Link
-        to="/"
-        className="text-2xl font-bold flex items-center gap-2"
-      >
-        <img
-          src="/Logo.png"
-          className="object-contain w-35 h-35"
-          alt="SkillBuddy Logo"
-        />
-        {/* SkillBuddy */}
-      </Link>
-
-      {/* Nav Links */}
-      <div className="space-x-6 hidden sm:flex">
-        {navLinks.map((link) => (
-          <Link
-            key={link.path}
-            to={link.path}
-            className={`text-xl font-medium ${
-              location.pathname === link.path
-                ? "text-green-700 underline"
-                : "text-gray-500 hover:text-green-700 transition"
-            }`}
-          >
-            {link.label}
-          </Link>
-        ))}
+    <nav className="bg-gray-300 border-b border-gray-200 shadow-sm px-3 py-2 flex justify-between items-center relative w-full">
+      {/* Logo */}
+      <div className="flex items-center gap-3">
+        <img src="/Logo.png" alt="SkillBuddy Logo" className="h-20 w-20 object-contain" />
+      </div>
+      {/* Navigation Items */}
+      <ul className="flex gap-8 font-medium text-gray-700">
+        <li className="hover:text-black cursor-pointer">🏠 Dashboard</li>
+        <li className="hover:text-black cursor-pointer">📚 Courses</li>
+        <li className="hover:text-black cursor-pointer">📈 Progress</li>
+        <li className="hover:text-black cursor-pointer">🤖 AI Mentor</li>
+      </ul>
+      {/* Logout Button */}
+      <div className="flex items-center gap-4">
+        <button className="bg-pink-500 hover:bg-pink-600 text-white font-semibold px-5 py-2 rounded-lg shadow transition-all">Logout</button>
       </div>
     </nav>
   );
