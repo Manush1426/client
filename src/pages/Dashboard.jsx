@@ -44,21 +44,21 @@ const FloatingShape = ({ style, className }) => (
 );
 
 const Dashboard = () => (
-  <div className="min-h-screen bg-gradient-to-br from-slate-900 via-indigo-950 to-black relative overflow-hidden font-sans">
+  <div className="min-h-screen bg-gradient-to-br from-gray-700 via-gray-900 to-pink-900 relative overflow-hidden font-sans">
     {/* Floating Background Icons */}
-    <FloatingIcon icon={<SiReact />} style={{ top: '20%', left: '4%', fontSize: '4.5rem', color: '#61dafb', opacity: 0.7, animation: 'float1 8s ease-in-out infinite' }} />
-    <FloatingIcon icon={<SiJavascript />} style={{ top: '24%', right: '7%', fontSize: '3.6rem', color: '#f7df1e', opacity: 0.7, animation: 'float2 7s ease-in-out infinite' }} />
+    <FloatingIcon icon={<SiReact />} style={{ top: '27%', left: '12%', fontSize: '4.5rem', color: '#61dafb', opacity: 0.7, animation: 'float1 8s ease-in-out infinite' }} />
+    <FloatingIcon icon={<SiJavascript />} style={{ top: '29%', right: '7%', fontSize: '3.6rem', color: '#f7df1e', opacity: 0.7, animation: 'float2 7s ease-in-out infinite' }} />
     <FloatingIcon icon={<SiPython />} style={{ bottom: '18%', left: '16%', fontSize: '3.9rem', color: '#3776ab', opacity: 0.7, animation: 'float3 9s ease-in-out infinite' }} />
-    <FloatingIcon icon={<SiHtml5 />} style={{ top: '25%', left: '18%', fontSize: '3.3rem', color: '#e34c26', opacity: 0.7, animation: 'float4 10s ease-in-out infinite' }} />
-    <FloatingIcon icon={<SiCss3 />} style={{ bottom: '33%', right: '15%', fontSize: '3.5rem', color: '#264de4', opacity: 0.7, animation: 'float5 8s ease-in-out infinite' }} />
+    <FloatingIcon icon={<SiHtml5 />} style={{ top: '18%', left: '75%', fontSize: '3.3rem', color: '#e34c26', opacity: 0.7, animation: 'float4 10s ease-in-out infinite' }} />
+    <FloatingIcon icon={<SiCss3 />} style={{ bottom: '30%', right: '15%', fontSize: '3.5rem', color: '#264de4', opacity: 0.7, animation: 'float5 8s ease-in-out infinite' }} />
     <FloatingIcon icon={<SiMongodb />} style={{ top: '60%', left: '5%', fontSize: '3.4rem', color: '#47a248', opacity: 0.7, animation: 'float6 11s ease-in-out infinite' }} />
-    <FloatingIcon icon={<SiNodedotjs />} style={{ bottom: '17%', right: '3%', fontSize: '4.1rem', color: '#8cc84b', opacity: 0.7, animation: 'float7 9s ease-in-out infinite' }} />
-    <FloatingIcon icon={<GiGraduateCap />} style={{ top: '12%', right: '18%', fontSize: '3.8rem', color: '#fff', opacity: 0.7, animation: 'float8 12s ease-in-out infinite' }} />
+    <FloatingIcon icon={<SiNodedotjs />} style={{ bottom: '12%', right: '3%', fontSize: '4.1rem', color: '#8cc84b', opacity: 0.7, animation: 'float7 9s ease-in-out infinite' }} />
+    <FloatingIcon icon={<GiGraduateCap />} style={{ top: '13.5%', right: '59.5%', fontSize: '3.8rem', color: '#fff', opacity: 0.7 }} />
     {/* Navbar at the top */}
     <Navbar />
     <main className="p-4 relative z-10">
-      <h2 className="text-5xl tracking-tight font-extrabold mb-10 flex items-center gap-2 font-sans" style={{letterSpacing:'-0.02em'}}>
-        <span className="bg-gradient-to-r from-blue-600 via-violet-500 to-pink-400 bg-clip-text text-transparent animate-gradient drop-shadow-lg">Welcome back, Manush</span>
+      <h2 className="text-5xl tracking-tight font-bold mt-5 mb-10 flex items-center gap-2 font-sans bg-gradient-to-r from-pink-500 to-pink-100 bg-clip-text text-transparent" style={{letterSpacing:'-0.02em'}}>
+        <span>Welcome back, Manush!</span>
         <span className="animate-wave">👋</span>
       </h2>
       <div className="h-8"></div>
