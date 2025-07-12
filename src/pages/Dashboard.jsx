@@ -54,8 +54,7 @@ const Dashboard = () => (
     <FloatingIcon icon={<SiMongodb />} style={{ top: '60%', left: '5%', fontSize: '3.4rem', color: '#47a248', opacity: 0.7, animation: 'float6 11s ease-in-out infinite' }} />
     <FloatingIcon icon={<SiNodedotjs />} style={{ bottom: '12%', right: '3%', fontSize: '4.1rem', color: '#8cc84b', opacity: 0.7, animation: 'float7 9s ease-in-out infinite' }} />
     <FloatingIcon icon={<GiGraduateCap />} style={{ top: '13.5%', right: '59.5%', fontSize: '3.8rem', color: '#fff', opacity: 0.7 }} />
-    {/* Navbar at the top */}
-    <Navbar />
+
     <main className="p-4 relative z-10">
       <h2 className="text-5xl tracking-tight font-bold mt-5 mb-10 flex items-center gap-2 font-sans bg-gradient-to-r from-pink-500 to-pink-100 bg-clip-text text-transparent" style={{letterSpacing:'-0.02em'}}>
         <span>Welcome back, Manush!</span>

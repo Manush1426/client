@@ -12,7 +12,6 @@ const Roadmap = () => {
   if (!steps) {
     return (
       <div className="min-h-screen bg-slate-900 text-white flex flex-col">
-        <Navbar />
         <div className="flex-1 flex items-center justify-center">
           <div className="text-2xl">No roadmap found for this topic.</div>
         </div>

@@ -8,7 +8,6 @@ const Quizzes = () => {
 
   return (
     <div className="min-h-screen bg-slate-900 text-white flex flex-col">
-      <Navbar />
       <div className="flex-1 flex flex-col items-center py-10 px-4">
         <h1 className="text-3xl font-bold mb-8 text-center">Available Quizzes</h1>
         <div className="w-full max-w-2xl space-y-6">

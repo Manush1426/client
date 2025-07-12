@@ -124,7 +124,6 @@ const CourseLibrary = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-700 via-gray-900 to-pink-900 font-sans relative">
-      <Navbar />
       <main className="max-w-5xl mx-auto py-16 px-4 animate-fade-in">
         <h1 className="text-4xl font-bold mb-8 bg-gradient-to-r from-pink-500 to-pink-100 bg-clip-text text-transparent">Course Library</h1>
         <p className="text-lg text-gray-200 mb-12">Browse our curated collection of courses and start learning new skills today!</p>
