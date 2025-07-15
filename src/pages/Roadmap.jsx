@@ -27,7 +27,7 @@ const Roadmap = () => {
   useEffect(() => {
     const token = localStorage.getItem('token');
     if (!token || !name) return;
-    fetch(`http://localhost:5000/api/progress/${encodeURIComponent(name)}`, {
+    fetch(`https://server-210v.onrender.com/api/progress/${encodeURIComponent(name)}`, {
       headers: { 'Authorization': `Bearer ${token}` }
     })
       .then(res => res.json())
@@ -66,7 +66,7 @@ const Roadmap = () => {
     const token = localStorage.getItem('token');
     const completedLessons = steps.filter((_, i) => updated[i]).map(s => s.title);
     try {
-      await fetch(`http://localhost:5000/api/progress/${encodeURIComponent(name)}`, {
+      await fetch(`https://server-210v.onrender.com/api/progress/${encodeURIComponent(name)}`, {
         method: 'PUT',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -85,7 +85,7 @@ const Roadmap = () => {
     setStartMsg('');
     const token = localStorage.getItem('token');
     try {
-      const res = await fetch(`http://localhost:5000/api/progress/${encodeURIComponent(name)}`, {
+      const res = await fetch(`https://server-210v.onrender.com/api/progress/${encodeURIComponent(name)}`, {
         method: 'PUT',
         headers: {
           'Authorization': `Bearer ${token}`,
