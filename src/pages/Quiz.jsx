@@ -11,7 +11,7 @@ const Quiz = () => {
 
   if (!quiz) {
     return (
-      <div className="min-h-screen bg-slate-900 text-white flex flex-col">
+      <div className="min-h-screen bg-gradient-to-br from-gray-700 via-gray-900 to-pink-900 text-white flex flex-col">
         <Navbar />
         <div className="flex-1 flex items-center justify-center">
           <div className="text-2xl">No quiz found for this topic.</div>
@@ -44,7 +44,7 @@ const Quiz = () => {
   };
 
   return (
-    <div className="min-h-screen bg-slate-900 text-white flex flex-col">
+    <div className="min-h-screen bg-gradient-to-br from-gray-700 via-gray-900 to-pink-900 text-white flex flex-col font-sans">
       <div className="flex-1 flex items-center justify-center">
         <div className="w-full max-w-2xl bg-slate-800 rounded-2xl shadow-2xl p-8 mt-8 mb-8">
           <h2 className="text-2xl font-bold mb-6 text-center">{topic} Quiz</h2>

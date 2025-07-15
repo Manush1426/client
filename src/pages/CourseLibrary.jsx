@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import { useNavigate } from 'react-router-dom';
 
-const courses = [
+export const courses = [
   // --- Frontend ---
   { title: 'React Fundamentals', description: 'Start your journey with the basics of React, including components, state, and hooks.', category: 'Frontend' },
   { title: 'Advanced React Patterns', description: 'Dive deeper into React with hooks, context, render props, and performance optimizations.', category: 'Frontend' },

@@ -30,14 +30,22 @@ const ChatWidget = ({ forceOpen = false }) => {
     if (forceOpen) setOpen(true);
   }, [forceOpen]);
 
-  const handleSend = () => {
+  const handleSend = async () => {
     if (input.trim() === '') return;
     setMessages([...messages, { sender: 'user', text: input }]);
+    const userMessage = input;
     setInput('');
-    // Placeholder for AI response
-    setTimeout(() => {
-      setMessages(msgs => [...msgs, { sender: 'ai', text: "I'm just a demo!" }]);
-    }, 800);
+    try {
+      const res = await fetch('http://localhost:5000/api/ai-chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: userMessage })
+      });
+      const data = await res.json();
+      setMessages(msgs => [...msgs, { sender: 'ai', text: data.response || data.error || 'Sorry, I could not answer.' }]);
+    } catch (err) {
+      setMessages(msgs => [...msgs, { sender: 'ai', text: 'Error connecting to AI.' }]);
+    }
   };
 
   // Header content
